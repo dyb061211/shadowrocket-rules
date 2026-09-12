@@ -2,8 +2,8 @@
 #!desc=Claude、ChatGPT、Codex、Gemini、Google、TikTok 与出口检测始终走手动选择的代理；无直连回退。
 
 [Proxy Group]
-US-4-FALLBACK = fallback,美国 01AI｜原生｜Ai专用｜,美国02 AI｜原生｜Ai专用｜,美国01|🇺🇸|注册|TikToK|家宽|,美国02|🇺🇸|注册|TikToK|家宽|,url=https://api.ipify.org/,interval=600,timeout=8,policy-select-name=美国 01AI｜原生｜Ai专用｜
-AI-GOOGLE = select,PROXY,US-4-FALLBACK,REJECT,policy-select-name=PROXY
+全部节点 = select,policy-regex-filter=^((?!(剩余流量|套餐到期|续费官网|官网|佣金|合作代理)).)*$
+AI-GOOGLE = select,PROXY,全部节点,REJECT,policy-select-name=PROXY
 
 [Rule]
 DOMAIN,api.ipify.org,AI-GOOGLE
