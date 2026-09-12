@@ -1,0 +1,17 @@
+#!name=AI 和 Google 隐私出口
+#!desc=Claude、ChatGPT、Codex、Gemini、Google、TikTok 与出口检测始终走手动选择的代理；无直连回退。
+
+[Proxy Group]
+US-4-FALLBACK = fallback,美国 01AI｜原生｜Ai专用｜,美国02 AI｜原生｜Ai专用｜,美国01|🇺🇸|注册|TikToK|家宽|,美国02|🇺🇸|注册|TikToK|家宽|,url=https://api.ipify.org/,interval=600,timeout=8,policy-select-name=美国 01AI｜原生｜Ai专用｜
+AI-GOOGLE = select,PROXY,US-4-FALLBACK,REJECT,policy-select-name=PROXY
+
+[Rule]
+DOMAIN,api.ipify.org,AI-GOOGLE
+DOMAIN,api.ipapi.is,AI-GOOGLE
+DOMAIN,proxycheck.io,AI-GOOGLE
+DOMAIN,aweme.snssdk.com,DIRECT
+DOMAIN-SUFFIX,qishui.com,DIRECT
+DOMAIN,dig.bdurl.net,REJECT
+RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,AI-GOOGLE
+RULE-SET,https://raw.githubusercontent.com/LingJingMaster/Shadowrocket-Rules/refs/heads/main/AI.list,AI-GOOGLE
+RULE-SET,https://raw.githubusercontent.com/LingJingMaster/Shadowrocket-Rules/refs/heads/main/Google.list,AI-GOOGLE
