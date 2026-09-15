@@ -10,6 +10,10 @@ DOMAIN,api.ipify.org,AI-GOOGLE
 DOMAIN,api.ipapi.is,AI-GOOGLE
 DOMAIN,proxycheck.io,AI-GOOGLE
 DOMAIN,aweme.snssdk.com,DIRECT
+DOMAIN,log.snssdk.com,DIRECT
+DOMAIN,ecomuser.snssdk.com,DIRECT
+DOMAIN,pitaya.bytedance.com,DIRECT
+DOMAIN-SUFFIX,ecombdpage.com,DIRECT
 DOMAIN-SUFFIX,qishui.com,DIRECT
 DOMAIN,dig.bdurl.net,REJECT
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/TikTok/TikTok.list,AI-GOOGLE

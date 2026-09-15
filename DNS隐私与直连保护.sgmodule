@@ -26,6 +26,7 @@ RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/r
 DOMAIN-SUFFIX,gdtimg.com,DIRECT
 DOMAIN-SUFFIX,alipayobjects.com,DIRECT
 DOMAIN-SUFFIX,baydn.com,DIRECT
+DOMAIN-SUFFIX,bcebos.com,DIRECT
 DOMAIN-SUFFIX,amemv.com,DIRECT
 DOMAIN,www.bytedance.com,DIRECT
 DOMAIN-SUFFIX,zijieapi.com,DIRECT
