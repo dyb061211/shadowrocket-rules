@@ -1,0 +1,17 @@
+.DS_Store
+**/private/
+**/private-backup/
+**/clash-verge.yaml
+**/clash-verge-check.yaml
+**/verge.yaml
+**/profiles.yaml
+**/cache.db
+**/*.mmdb
+**/*.dat
+**/logs/
+/clash-verge/rulesets/maintained/google.yaml
+/clash-verge/rulesets/maintained/tiktok.yaml
+/clash-verge/rulesets/maintained/httpdns.yaml
+/clash-verge/rulesets/maintained/douyin.yaml
+/clash-verge/rulesets/maintained/wechat.yaml
+/clash-verge/rulesets/maintained/sukka-ai.txt

@@ -1,0 +1,25 @@
+---
+payload:
+- DOMAIN-SUFFIX,generativeai.google
+- DOMAIN-SUFFIX,makersuite.google.com
+- DOMAIN,aistudio.google.com
+- DOMAIN,alkalicore-pa.clients6.google.com
+- DOMAIN,alkalimakersuite-pa.clients6.google.com
+- DOMAIN,antigravity.google
+- DOMAIN,antigravity-unleash.goog
+- DOMAIN-SUFFIX,deepmind.google
+- DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+- DOMAIN-SUFFIX,geller-pa.googleapis.com
+- DOMAIN-SUFFIX,generativelanguage.googleapis.com
+- DOMAIN,ai.google.dev
+- DOMAIN,bard.google.com
+- DOMAIN,gemini.google.com
+- DOMAIN-KEYWORD,notebooklm.google
+- DOMAIN-KEYWORD,labs.google
+- DOMAIN-SUFFIX,download.qatp1.net
+- DOMAIN-SUFFIX,monitoring.qpdp1.net
+- DOMAIN-SUFFIX,qagpublic.qatp1.net
+- DOMAIN-SUFFIX,qgadmin.qcpp1.net
+- DOMAIN-SUFFIX,qualysapi.qatp1.net
+- DOMAIN-SUFFIX,qualysguard.qpdp1.net
+- DOMAIN-SUFFIX,scanservice1.qcpp1.net

@@ -1,10 +1,23 @@
-# Shadowrocket 分流与隐私模块
+# Shadowrocket / Clash Verge 分流与隐私配置
+
+本仓库提供两种客户端的配置，文件格式不能混用：
+
+| 客户端 | 配置入口 | 用途 |
+| --- | --- | --- |
+| Shadowrocket | 下方两个 `.sgmodule` 模块 | 保留原有 AI/Google 出口与 DNS/国内直连配置 |
+| Clash Verge Rev / Mihomo（macOS） | [Clash Verge 安装说明](./clash-verge/README.md) | 订阅增强脚本、主备切换、远程规则每日更新和 GeoData 维护 |
+
+2026-11-01 新增 Clash Verge 版本：6 个公共规则集合每24小时更新，保留银行、券商等本地定制规则，并提供[规则来源](./clash-verge/SOURCES.md)及[验证范围](./clash-verge/VALIDATION.md)。更新由本机运行中的 Mihomo 执行，不是这个 GitHub 仓库的定时任务。
+
+仓库不包含节点、机场订阅、密码或 token。先在对应客户端导入自己的可用订阅，再按该客户端的说明安装。
+
+## Shadowrocket 版本
 
 这套配置由两个可独立启用的 Shadowrocket 模块组成，目标是在保留国内服务直连体验的同时，让 AI、Google、TikTok 和出口检测稳定使用指定代理，并减少 DNS、IPv6、QUIC 与 WebRTC 造成的出口不一致风险。
 
 > 这里不包含代理节点、机场订阅、密码或 token。使用前必须先在 Shadowrocket 中导入自己的可用节点或订阅。
 
-## 模块说明
+## Shadowrocket 模块说明
 
 ### 1. AI 和 Google 隐私出口
 
@@ -29,7 +42,7 @@
 - 局域网、微信、抖音、部分阿里/字节/百度对象存储服务、香港银行和券商保持直连。
 - 不强制覆盖 Apple 服务规则；STUN/WebRTC 是否禁用仍由 Shadowrocket 设置页手动控制。
 
-## 安装方法
+## Shadowrocket 安装方法
 
 1. 先将仓库下载到设备，或打开对应 `.sgmodule` 文件的 Raw 地址。
 2. 在 Shadowrocket 中进入“配置 → 模块”，点击右上角 `+` 导入模块。
